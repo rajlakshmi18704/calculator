@@ -1,0 +1,17 @@
+button{
+    background-color: rgb(117, 210, 30);
+    height: 36px;
+    width: 36px;
+   margin: 5px;
+    border-radius: 14px;
+    border-style:none;
+}
+body{
+    background-color: aqua;
+}
+.box1
+{
+    height: 40%;
+
+    width: 40%;
+}

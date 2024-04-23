@@ -4,23 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel ="stylesheet" href="calculator.css">
 </head>
 <body>
-    <button>0</button>
-    <buton>1</butoon>
-    <buton>2</butoon>
-    <buton>3</butoon>
-    <buton>4</butoon>
-    <buton>5</butoon>
-    <buton>6</butoon>
-    <buton>7</butoon>
-    <buton>8</butoon>
-    <buton>9</butoon>
-  
-    <buton>+</butoon>
-    <buton>-</butoon>
-    <buton>*</butoon>
-    <buton>/</button>
-    <button>X</button>
+    <div class="box-1">
+    <button class="btn-1" onclick="calculate(0)">0</button>
+    <button class="btn-1" onclick="calculate(1)">1</button>
+    <button class="btn-1" onclick="calculate(2)">2</button>
+    <button class="btn-1" onclick="calculate(3)">3</button>
+</div>
+<div class="box-1">
+    <button class="btn-1"
+    onclick="calculate(4)">4</button>
+    <button class="btn-1"onclick="calculate(5)">5</button>
+    <button class="btn-1" onclick="calculate(6)">6</button>
+    <button class="btn-1" onclick="calculate(7)">7</button>
+</div>
+<div class="box-1"></div>
+    <button class="btn-1"
+    onclick="calculate(8)">8</button>
+    <button class="btn-1"
+    onclick="calculate(9)">9</button>
+    <button class="btn-1"
+    onclick="calculate('+')">+</button>
+    <button class="btn-1"onclick="calculate('-')">-</button>
+</div>
+<div class="box-1"></div>
+    <button class="btn-1"
+    onclick="calculate('*')">*</button>
+    <button class="btn-1" onclick="calculate('/')">/</button>
+    <button class="btn-1" onclick="calculate('X')">X</button>
+</div>
 </body>
+<script>
+    const a=document.querySelectorAll('.btn-1')
+  a.forEach((button)=>{
+    button.addEventListener('click',()=>{
+      
+    })
+  })
+  let b=0;
+  function calculate(value){
+    
+   b+=value;
+   console.log(value);
+   console.log(b);
+  }
+
+</script>
 </html>
