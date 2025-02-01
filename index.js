@@ -16,7 +16,7 @@ var calc_operator;
 var total;
 
 var key_combination = []
-function button_number(button) {
+function btnNo(button) {
 
     operator = document.getElementsByClassName("operator");
     box = document.getElementById("box");
@@ -391,17 +391,17 @@ function keyPressed(e) {
     if (isNumber || operators.includes(e.key) || e.key == "Enter" || e.key == dotPress || 
         commaPress || e.key == "Backspace"){
         if (e.key == "Enter"){
-            button_number(enterPress)
+            btnNo(enterPress)
         }
         else if (e.key == "Backspace"){
             document.getElementById("backspace_btn").style.backgroundColor  = "#999999";
             backspace_remove()
         }
         else if (commaPress){
-            button_number(dot)
+            btnNo(dot)
         }
         else {
-            button_number(e.key) 
+            btnNo(e.key) 
         }   
     }
     if (e.key) {
@@ -418,7 +418,7 @@ function keyReleased(e){
             if (isNumber){
                 var copy_number = text
                 firstNum = true
-                button_number(copy_number)
+                btnNo(copy_number)
             }
         }).catch(err => {
             console.error('Failed to read clipboard contents: ', err);
